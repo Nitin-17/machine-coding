@@ -1,0 +1,46 @@
+/* Container Styling */
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Tab Button Styling */
+.tabLink {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s;
+}
+
+.tabLink:hover {
+  background-color: #ccc;
+}
+
+.tabLink.active {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-bottom: none;
+  color: #007bff;
+}
+
+/* Content Container */
+.tabContents {
+  border: 2px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Each Tab Content */
+.tabContent {
+  display: none;
+}
+
+.tabContent.active {
+  display: block;
+}
